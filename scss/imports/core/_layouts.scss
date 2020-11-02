@@ -1,0 +1,310 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    max-width: $max-width;
+    -webkit-font-smoothing: antialiased;
+    margin: auto;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    @include text($fz-text, fmain, $lh-text, $text-cl, none);
+    background: #1d1d1d;
+    position: relative;
+    @include custom-scrollbar();
+    .mainwrapper {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    @include desktop {
+        .container{
+            max-width: 100%;
+        }
+        .row{
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    @include typical-laptop{
+        .feature-projects{
+            height: 55%;
+        }
+        .slider{
+            height: 600px;
+        }
+    }
+    @include tablet {
+        .slider{
+            height: 500px;
+            .carousel-content-wrapper{
+                .inner{
+                    left: 1%;
+                }
+            }
+            .flickity-viewport{
+                height: 100% !important;
+            }
+            .button-carousel-container{
+                top: 80%;
+                left: 92%;
+                display: flex;
+                flex-direction: column;
+            }
+            .btn-view-all{
+                top: 43%;
+                right: 4%;
+            }
+        }
+        .brand-about{
+            .row{
+                flex-direction: column;
+                .brand-about__left{
+                    width: 100% !important;
+                }
+                .brand-about__right{
+                    width: 100% !important;
+                    padding-left: 0 !important;
+                }
+            }
+        }
+        .market{
+            .line-wood{
+                top: -50px !important;
+            }
+            .btn-market{
+                margin-top: 20px;
+            }
+        }
+        .news{
+            .row{
+                flex-direction: column;
+                gap: 20px;
+                .news-item-wrapper{
+                    width: 100%;
+                    .news__item{
+                        width: 100%;
+                        margin-left: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+    @include mobile {
+        .row{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .btn-view-all{
+            display: none;
+        }
+        .slider{
+            .button-carousel-container{
+                left: 85%;
+            }
+            .carousel-content{
+                h2{
+                    font-size: 28px !important;
+                }
+                p{
+                    margin-top: 15px !important;
+                }
+            }
+        }
+        .brand-about{
+            .brand-value{
+                h3{
+                    font-size: 50px !important;
+                }
+            }
+            .area{
+                .left{
+                    h3{
+                        font-size: 42px !important;
+                        span{
+                            font-size: 140px !important;
+                        }
+                    }
+                    p{
+                        font-size: 28px !important;
+                    }
+                }
+            }
+            .item-value__text{
+                p{
+                    font-size: 18px !important;
+                }
+                h4{
+                    font-size: 34px !important;
+                }
+                h3{
+                    font-size: 70px !important;
+                    span{
+                        font-size: 18px !important;
+                    }
+                }
+            }
+        }
+        .market{
+            padding-bottom: 50px;
+            .container{
+                .row{
+                    .line-wood{
+                        width: 80%;
+                        left: 0;
+                        top: -50px;
+                        height: auto;
+                    }
+                    .market-col__left{
+                        .inner{
+                            padding-left: 0;
+                            .text{
+                                position: absolute;
+                                top: 150px;
+                                left: 0;
+                            }
+                            .map-vn{
+                                margin-top: -20px;
+                            }
+                        }
+                    }
+                    .market-col__right{
+                        margin-top: 40px;
+                        .inner{
+                            padding: 0;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include mobile-xxs{
+        .menu-icon{
+            .svg{
+                width: 25px;
+                height: 25px;
+            }
+        }
+        .logo{
+            width: 80px !important;
+            height: 25px !important;
+        }
+        .row{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .btn-view-all{
+            display: none;
+        }
+        .slider{
+            .button-carousel-container{
+                left: 85%;
+            }
+            .carousel-content{
+                h2{
+                    font-size: 28px !important;
+                }
+                p{
+                    margin-top: 15px !important;
+                }
+            }
+        }
+        .brand-about{
+            .brand-value{
+                h3{
+                    font-size: 50px !important;
+                }
+            }
+            .area{
+                .left{
+                    h3{
+                        font-size: 42px !important;
+                        span{
+                            font-size: 140px !important;
+                        }
+                    }
+                    p{
+                        font-size: 28px !important;
+                    }
+                }
+            }
+            .item-value__text{
+                p{
+                    font-size: 18px !important;
+                }
+                h4{
+                    font-size: 34px !important;
+                }
+                h3{
+                    font-size: 70px !important;
+                    span{
+                        font-size: 18px !important;
+                    }
+                }
+            }
+        }
+        .market{
+            padding-bottom: 50px;
+            .container{
+                .row{
+                    .line-wood{
+                        width: 80%;
+                        left: 0;
+                        top: -50px;
+                        height: auto;
+                    }
+                    .market-col__left{
+                        .inner{
+                            padding-left: 0;
+                            .text{
+                                position: absolute;
+                                top: 150px;
+                                left: 0;
+                            }
+                            .map-vn{
+                                margin-top: -20px;
+                            }
+                        }
+                    }
+                    .market-col__right{
+                        margin-top: 40px;
+                        .inner{
+                            padding: 0;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .btn-all{
+            width: 140px !important;
+        }
+        .footer__address{
+            margin-left: 30px !important;
+        }
+        .footer__form{
+            margin-left: 30px !important;
+            h2{
+                font-size: 28px !important;
+            }
+            .input__wrap{
+                input{
+                    width: 125px !important;
+                }
+            }
+        }
+    }
+
+}

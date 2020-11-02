@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a4b0fcc2-7bd8-4333-9c7b-0f6cf47c4c40" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1jIv3sSh0X1xaUcoGt28Qxyfx3T" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4b0fcc2-7bd8-4333-9c7b-0f6cf47c4c40" name="Default Changelist" comment="" />
+      <created>1603504223544</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603504223544</updated>
+      <workItem from="1603504224672" duration="1335000" />
+      <workItem from="1603511847468" duration="6741000" />
+      <workItem from="1603524727858" duration="6799000" />
+      <workItem from="1603540340195" duration="9690000" />
+      <workItem from="1603600273062" duration="523000" />
+      <workItem from="1603603541181" duration="3504000" />
+      <workItem from="1603642160596" duration="5644000" />
+      <workItem from="1603647966822" duration="5321000" />
+      <workItem from="1603686808060" duration="9581000" />
+      <workItem from="1603713940561" duration="9217000" />
+      <workItem from="1603731705302" duration="599000" />
+      <workItem from="1603764723926" duration="14618000" />
+      <workItem from="1603789221371" duration="2619000" />
+      <workItem from="1603800500522" duration="10660000" />
+      <workItem from="1603853230149" duration="9002000" />
+      <workItem from="1603868270723" duration="2848000" />
+      <workItem from="1603880598447" duration="6398000" />
+      <workItem from="1603900294643" duration="4348000" />
+      <workItem from="1603936508305" duration="3073000" />
+      <workItem from="1603952406351" duration="1581000" />
+      <workItem from="1604030374369" duration="8787000" />
+      <workItem from="1604054146160" duration="626000" />
+      <workItem from="1604059928553" duration="6881000" />
+      <workItem from="1604111029655" duration="13031000" />
+      <workItem from="1604145514349" duration="3904000" />
+      <workItem from="1604209734606" duration="6363000" />
+      <workItem from="1604239150618" duration="10554000" />
+      <workItem from="1604287042550" duration="3198000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="581" y="181" key="#Inspections" timestamp="1603765598454">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="581" y="181" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1603765598454" />
+    <state x="686" y="215" key="FileChooserDialogImpl" timestamp="1603861556921">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="686" y="215" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603861556921" />
+    <state x="350" y="78" key="SettingsEditor" timestamp="1603901746020">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="350" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603901746020" />
+    <state x="466" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603860791097">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="466" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603860791097" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1603690118972">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603690118972" />
+  </component>
+</project>

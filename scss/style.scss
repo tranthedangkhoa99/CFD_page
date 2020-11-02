@@ -1,0 +1,97 @@
+/* Core variables and mixins*/
+@import "imports/core/reset";
+@import "imports/core/variables";
+@import "imports/core/mixins";
+@import "imports/core/responsive";
+@import "imports/core/layouts";
+@import "imports/core/elements";
+@import "imports/core/components";
+@import "imports/core/bootstrap_mini";
+@import "imports/core/libs";
+
+@import "imports/core/loading";
+
+/* Navigation, header, footer*/
+@import "imports/core/header";
+@import "imports/core/nav";
+@import "imports/core/footer";
+
+/* Pages*/
+@import "imports/pages/home";
+@import "imports/pages/contact";
+@import "imports/pages/detail";
+@import "imports/pages/intro";
+
+.c-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10px;
+  height: 100vh;
+  transform-origin: center right;
+  transition: transform .3s,opacity .3s;
+  opacity: 0;
+}
+.c-scrollbar_thumb{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #696969;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.btn-view-all{
+  cursor: pointer;
+  position: absolute;
+  text-align: right;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+  .svg{
+    fill: $white-cl;
+    width: 40px;
+    height: 40px;
+  }
+  .text{
+    margin-top: 10px;
+    display: flex;
+    .svg{
+      width: 25px;
+    }
+    p{
+      font-size: 16px;
+      color: $white-cl;
+      font-family: b;
+      margin-left: 10px;
+    }
+  }
+}
+
+.btn-close-projects{
+  cursor: pointer;
+  position: absolute;
+  text-align: right;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+  .svg{
+    fill: $white-cl;
+    width: 40px;
+    height: 40px;
+  }
+  .text{
+    margin-top: 10px;
+    display: flex;
+    .svg{
+      width: 25px;
+      transform: rotate(180deg);
+    }
+    p{
+      font-size: 16px;
+      color: $white-cl;
+      font-family: b;
+      margin-left: 10px;
+    }
+  }
+}
+

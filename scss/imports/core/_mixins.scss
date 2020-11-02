@@ -1,0 +1,216 @@
+// MIXINS
+@mixin desktop-large {
+	@media (max-width: $lg-max) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (max-width: $md-max) {
+		@content;
+	}
+}
+
+@mixin typical-laptop{
+	@media (max-width :1366px){
+		@content;
+	}
+}
+@mixin tablet {
+	@media screen and (max-width: $sm-max) and (min-height: 500px) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media screen and (min-width: 320px) and (max-width: $xs-max) {
+		@content;
+	}
+}
+
+@mixin mobile-xxs {
+	@media (max-width: $xxs-max) {
+		@content;
+	}
+}
+
+@mixin maxW($args) {
+	@media (max-width: $args) {
+		@content;
+	}
+}
+
+@mixin minW($args) {
+	@media (min-width: $args) {
+		@content;
+	}
+}
+
+@mixin minH($args) {
+	@media (min-height: $args) {
+		@content;
+	}
+}
+
+@mixin maxH($args) {
+	@media (max-height: $args) {
+		@content;
+	}
+}
+
+@mixin desktop_lc {
+	@media screen and (min-width: $sm-min) and (max-width: $md-max) and (orientation: landscape) {
+		@content;
+	}
+}
+
+@mixin tablet_lc {
+	@media screen and (min-width: $xs-min) and (max-width: $sm-max) and (orientation: landscape) {
+		@content;
+	}
+}
+
+@mixin mobile_lc {
+	@media screen and (max-width: $xs-max) and (orientation: landscape) {
+		@content;
+	}
+}
+
+@mixin br($radius) {
+	border-radius: $radius;
+	background-clip: padding-box; /* stops bg color from leaking outside the border: */
+}
+
+@mixin keyframes($animation-name) {
+	@-webkit-keyframes #{$animation-name} {
+		@content;
+	}
+	@-moz-keyframes #{$animation-name} {
+		@content;
+	}
+	@-ms-keyframes #{$animation-name} {
+		@content;
+	}
+	@-o-keyframes #{$animation-name} {
+		@content;
+	}
+	@keyframes #{$animation-name} {
+		@content;
+	}
+}
+
+@mixin animation($str) {
+	-webkit-animation: #{$str};
+	-moz-animation: #{$str};
+	-ms-animation: #{$str};
+	-o-animation: #{$str};
+	animation: #{$str};
+}
+@mixin transform($args) {
+	transform: $args;
+	-webkit-transform: $args;
+	-o-transform: $args;
+}
+
+@mixin transform-origin($args) {
+	transform-origin: $args;
+	-webkit-transform-origin: $args;
+	-o-transform-origin: $args;
+}
+@mixin transition-delay($args) {
+	transition-delay: $args;
+	-webkit-transition-delay: $args;
+	-o-transition-delay: $args;
+}
+
+@mixin transition($args) {
+	transition: $args;
+	-webkit-transition: $args;
+	-o-transition: $args;
+}
+@mixin text($font-size, $font-family, $line-height, $color, $text-transform) {
+	font-size: $font-size;
+	font-family: $font-family;
+	line-height: $line-height;
+	color: $color;
+	text-transform: $text-transform;
+}
+
+@mixin mid() {
+	top: 50%;
+	left: 50%;
+	@include transform(translate(-50%, -50%));
+	position: absolute;
+}
+
+
+@mixin midflex() {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin fullpage() {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+@mixin full-fixed() {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+@mixin hidden() {
+	opacity: 0;
+	visibility: hidden;
+}
+@mixin visible() {
+	opacity: 1;
+	visibility: visible;
+}
+
+@mixin overtext($args) {
+	display: -webkit-inline-box;
+	-webkit-line-clamp: $args;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+@mixin custom-scrollbar {
+	.c-scrollbar {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 10px;
+		height: 100vh;
+		transform-origin: center right;
+		transition: transform .3s,opacity .3s;
+		opacity: 0;
+	}
+	.c-scrollbar_thumb{
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: #696969;
+		cursor: -webkit-grab;
+		cursor: grab;
+	}
+
+}
+@mixin btn--main{
+	text-align: center;
+	background: #ecc41b;
+	font-family: bb;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	white-space: nowrap;
+	color: #1d1d1d;
+	transition: .6s;
+	-webkit-transition: .6s;
+	-o-transition: .6s;
+}

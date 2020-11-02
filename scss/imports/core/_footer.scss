@@ -1,0 +1,124 @@
+footer {
+	height: 377px;
+	background: $second-white-bg;
+	.container{
+		padding-top: 50px;
+		position: relative;
+		height: 100%;
+		.footer__text-mark{
+			position: absolute;
+			writing-mode: vertical-rl;
+			p{
+				color: $black-cl;
+				font-size: 15px;
+				font-family: b;
+			}
+		}
+		.footer__form{
+			margin-left: 50px;
+			p{
+				font-size: 14px;
+				color: $black-cl;
+				font-family: b;
+			}
+			h2{
+				font-size: 54px;
+				font-family: b8;
+				color: $black-cl;
+				margin-bottom: 10px;
+			}
+			.input__wrap{
+				display: flex;
+				height: 45px;
+				input{
+					background: $white-cl;
+					border: none;
+					padding: 20px;
+					width: 275px;
+					&:focus{
+						outline: none;
+					}
+				}
+				.btn{
+					@include btn--main;
+					width: 80px;
+					padding: 15px;
+					&:hover{
+						background: #f3f347;
+					}
+				}
+			}
+		}
+		.footer__address{
+			width: 200px;
+			margin-right: 130px;
+			p{
+				margin-bottom: 30px;
+				font-family: b;
+				font-size: 14px;
+				color: $black-cl;
+			}
+			.socials-icon{
+				display: flex;
+				.icon{
+					width: 45px;
+					fill: $sub-text-cl;
+				}
+			}
+		}
+		.footer__to-top{
+			position: absolute;
+			cursor: pointer;
+			right: 0;
+			top: 0;
+			width: 100px;
+			height: 100%;
+			background: $yellow-cl;
+			display: flex;
+			align-items: flex-end;
+			&:hover .svg{
+				transform: scaleX(1.5);
+			}
+			.to-top__icon{
+				width: 100px;
+				border-radius: 50%;
+				border: 5px solid $white-cl;
+				padding: 20px;
+				transform: rotate(-90deg);
+				margin-bottom: 30px;
+				.svg{
+					transition: all .5s;
+				}
+			}
+		}
+	}
+	@include desktop {
+
+	}
+	@include tablet {
+		.container{
+			.footer__to-top{
+				width: 40px !important;
+				.to-top__icon{
+					padding: 5px !important;
+					border: 2px solid $white-cl !important;
+
+				}
+			}
+			.footer__address{
+				margin-left: 50px;
+				margin-top: 10px;
+				width: 350px;
+				p{
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+	@include mobile {
+
+	}
+	@include mobile-xxs {
+
+	}
+}
